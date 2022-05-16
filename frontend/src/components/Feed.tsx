@@ -1,9 +1,17 @@
 import { Box } from "@mui/material";
+import MyCard from "./MyCard";
+
 
 const Feed = () => {
   return (
-    <Box bgcolor={"skyblue"} flex={3} p={2}>
-      Hello Feed
+    <Box flex={3} p={2}>
+      <MyCard />
+      <MyCard />
+      <MyCard />
+      <MyCard />
+      <MyCard />
+      <MyCard />
+      <MyCard />
     </Box>
   );
 };
