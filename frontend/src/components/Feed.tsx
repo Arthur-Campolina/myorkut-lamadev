@@ -7,11 +7,6 @@ const Feed = () => {
     <Box flex={3} p={2}>
       <MyCard />
       <MyCard />
-      <MyCard />
-      <MyCard />
-      <MyCard />
-      <MyCard />
-      <MyCard />
     </Box>
   );
 };
