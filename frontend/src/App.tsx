@@ -1,4 +1,10 @@
-import { Box, createTheme, Stack, ThemeProvider } from "@mui/material";
+import {
+  Box,
+  createTheme,
+  PaletteMode,
+  Stack,
+  ThemeProvider,
+} from "@mui/material";
 import { useState } from "react";
 import Add from "./components/Add";
 import Feed from "./components/Feed";
@@ -7,11 +13,11 @@ import Rightbar from "./components/Rightbar";
 import Sidebar from "./components/Sidebar";
 
 const App = () => {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState<PaletteMode | undefined>("light");
 
   const darkTheme = createTheme({
     palette: {
-      mode: mode,
+      mode,
     },
   });
 

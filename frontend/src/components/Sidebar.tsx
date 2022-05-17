@@ -5,6 +5,7 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  PaletteMode,
   Switch,
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
@@ -16,7 +17,12 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import { ModeNight } from "@mui/icons-material";
 
-const Sidebar = () => {
+type Props = {
+  setMode: Function;
+  mode: PaletteMode | undefined;
+};
+
+const Sidebar = ({ setMode, mode }: Props) => {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position={"fixed"}>
